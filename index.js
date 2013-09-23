@@ -1148,6 +1148,10 @@ exports.createClient = function (port_arg, host_arg, options) {
         host = host_arg || default_host,
         redis_client, net_client;
 
+    console.log("()()()()()()()()()()()()()()");
+    console.log(host);
+    console.log(port);
+    console.log("(*)(*)(*)(*)(*)(*)(*)(*)(*)(*)");
     net_client = net.createConnection(port, host);
 
     redis_client = new RedisClient(net_client, options);
